@@ -1,3 +1,4 @@
+
 if __name__ == "__main__":
   # Introduction to the Python keyword arguments
 
@@ -25,3 +26,11 @@ if __name__ == "__main__":
   print(get_net_price(100, 0.06))
   print(get_net_price(price = 100, discount = 0.06))
   print(get_net_price(100, discount = 0.06))
+
+  # Python keyword argument requirements
+
+  # net_price = get_net_price(100, tax = 0.08, 0.06)
+  # SyntaxError
+
+  net_price = get_net_price(100, tax = 0.08, discount = 0.06)
+  print(net_price)
